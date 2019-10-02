@@ -16,7 +16,7 @@ export const useDarkMode = () => {
     } else {
       document.body.classList.remove('dark-mode');
     }
-  })
+  }, [isDark])
 
   return [isDark, toggleDark];
 }
